@@ -1,5 +1,5 @@
 syntax = "proto3";
-package make87.text;
+package make87_messages.text;
 import "google/protobuf/timestamp.proto";
 
 // text/plain
