@@ -4,28 +4,28 @@ import "google/protobuf/timestamp.proto";
 
 
 message LogMessage {
-  // The timestamp of the log entry.
-  google.protobuf.Timestamp timestamp = 1;
+    // The timestamp of the log entry.
+    google.protobuf.Timestamp timestamp = 1;
 
-  // The severity level of the log entry.
-  enum LogLevel {
-    DEBUG = 0;
-    INFO = 1;
-    WARNING = 2;
-    ERROR = 3;
-    CRITICAL = 4;
-  }
-  LogLevel level = 2;
-  // The actual log message content.
-  string message = 3;
-  // The source of the log message (e.g., service, module, application).
-  string source = 4;
-  // The name of the file where the log was generated.
-  string file_name = 5;
-  // The line number in the source file.
-  int32 line_number = 6;
-  // The process ID.
-  int64 process_id = 7;
-  // The thread ID.
-  int64 thread_id = 8;
+    // The severity level of the log entry.
+    enum LogLevel {
+        DEBUG = 0;
+        INFO = 1;
+        WARNING = 2;
+        ERROR = 3;
+        CRITICAL = 4;
+    }
+    LogLevel level = 2;
+    // The actual log message content.
+    string message = 3;
+    // The source of the log message (e.g., service, module, application).
+    string source = 4;
+    // The name of the file where the log was generated.
+    string file_name = 5;
+    // The line number in the source file.
+    int32 line_number = 6;
+    // The process ID.
+    int64 process_id = 7;
+    // The thread ID.
+    int64 thread_id = 8;
 }

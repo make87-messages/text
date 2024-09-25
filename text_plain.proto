@@ -4,6 +4,6 @@ import "google/protobuf/timestamp.proto";
 
 // text/plain
 message PlainText {
-  google.protobuf.Timestamp timestamp = 1;
-  string body = 2;
+    google.protobuf.Timestamp timestamp = 1;
+    string body = 2;
 }
